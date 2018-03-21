@@ -20,4 +20,14 @@ public class MathFunctionsTest extends TestCase {
 		}
 	}
 	
+	public void test_Sum_WrongParameters2() {
+		MathFunctions math = new MathFunctions();
+		try {
+			math.Sum(10, null);
+			fail("MathFunctions.sum did not throw IllegalArgumentException.");
+		} catch (IllegalArgumentException e) {
+			
+		}
+	}
+	
 }
